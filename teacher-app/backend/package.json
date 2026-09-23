@@ -1,0 +1,19 @@
+{
+    "name": "teacher-management-api",
+    "version": "1.0.0",
+    "description": "Teacher Management API - Node.js Express MongoDB",
+    "main": "src/server.js",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.6.1",
+        "express": "^4.21.1",
+        "mongoose": "^8.7.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}
