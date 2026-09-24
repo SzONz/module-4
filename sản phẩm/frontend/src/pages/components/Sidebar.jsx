@@ -31,12 +31,10 @@ export default function Sidebar({
   const [creatingPlaylist, setCreatingPlaylist] = useState(false);
   const [playlistError, setPlaylistError] = useState("");
 
-  // Keep local playlists in sync if parent data changes
   useEffect(() => {
     setPlaylists(initialPlaylists);
   }, [initialPlaylists]);
 
-  // Load the current user's playlists
   useEffect(() => {
     async function loadPlaylists() {
       try {
@@ -130,7 +128,6 @@ export default function Sidebar({
         setPlaylistName("");
         setShowCreatePlaylist(false);
 
-        // Open the newly created playlist
         navigate(`/playlist/${data.playlist._id}`);
       }
     } catch (error) {
