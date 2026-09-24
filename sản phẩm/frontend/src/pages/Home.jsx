@@ -472,7 +472,6 @@ const handleDeleteAlbum = async () => {
     }
 
     function handleEnded() {
-      // we'll replace this below
     }
 
     audio.addEventListener("timeupdate", handleTimeUpdate);

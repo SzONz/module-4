@@ -135,7 +135,6 @@ export default function Admin() {
           )
         );
 
-        // Album deletion also deletes its tracks.
         setMusic((previous) =>
           previous.filter(
             (song) =>

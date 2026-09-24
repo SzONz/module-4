@@ -82,7 +82,6 @@ export default function UploadMusic() {
 
         setCurrentUser(data.user);
 
-        // Current username becomes the default artist
         setForm((previous) => ({
           ...previous,
           artist:
